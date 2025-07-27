@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "My Note",
+    "body": "This is my first saved note.",
+    "created_at": "2025-07-27T19:35:27.572295"
+  },
+  {
+    "id": 2,
+    "title": "Test Run",
+    "body": "This is a test to make sure everything works.",
+    "created_at": "2025-07-27T19:51:29.198473"
+  },
+  {
+    "id": 3,
+    "title": "Demo Note",
+    "body": "This is just a test to show the tool works.",
+    "created_at": "2025-07-27T20:00:49.511275"
+  }
+]

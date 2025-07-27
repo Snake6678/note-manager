@@ -29,3 +29,6 @@ source venv/bin/activate
 ###Listing Notes
 ![List Notes](assets/Screenshot%202025-07-27%20at%204.03.19%20PM.png)
 
+###  Adding a Note
+![Add Note](assets/add_note.png)
+
