@@ -61,9 +61,3 @@ Replace `'your@email.com'` with your real email.
 - Python 3.x  
 - No external libraries needed (`tkinter`, `sqlite3`, `argparse`, etc. are built-in)
 
----
-
-##  Screenshots
-
-_Add screenshots of the GUI and terminal here (optional but recommended)_
-
