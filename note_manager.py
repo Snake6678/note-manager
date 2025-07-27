@@ -84,7 +84,11 @@ class NoteManager:
             print(f"Notes exported to {output} in CSV format.")
         else:
             print("Unsupported format. Use 'json' or 'csv'.")
-
+   
+    def delete_note_by_title(self, title: str):
+        cur = self.conn.cursor()
+        cur.execute("DELETE FROM notes WHERE title = ?", (title,))
+        self.conn.commit()
 
 def main():
     parser = argparse.ArgumentParser(description="Command-line note manager")
