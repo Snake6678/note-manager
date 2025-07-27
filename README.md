@@ -32,3 +32,8 @@ source venv/bin/activate
 ###  Adding a Note
 ![Add Note](assets/add_note.png)
 
+###  List Notes
+Command:
+```bash
+python3 note_manager.py --email wwierdak66@gmail.com --license 56f --command list
+

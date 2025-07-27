@@ -1,5 +1,4 @@
-"""
-note_manager.py — Simple command-line note manager with license check
+""" note_manager.py — Simple command-line note manager with license check
 
 Features:
 - Add notes with a title and body
