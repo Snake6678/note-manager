@@ -1,19 +1,26 @@
 # Note Manager
 
-A simple Python note-taking app with both a command-line interface and a desktop GUI (built with `tkinter`). Notes are stored in a local SQLite database, and you can add, list, delete, and export them.
+Note Manager is a lightweight Python application that allows you to create, edit, delete, and export notes. It offers both a command-line interface and a graphical user interface (GUI) built with `tkinter`. Notes are stored locally using SQLite.
 
----
+This version includes voice-to-text note entry and basic math expression evaluation using SymPy.
 
-##  Features
+## Features
 
-- Add notes (title + body)
-- List all saved notes
--️ Delete notes by title
-- Export notes to `JSON` or `CSV`
--️ Clean, minimal GUI
-- Lightweight & offline — no cloud, no logins
+- Add notes with title and body
+- Edit existing notes by selecting them from the list
+- Scrollable list of saved notes
+- Delete notes by title
+- Export notes to JSON or CSV format
+- Desktop GUI built with tkinter
+- Voice recognition for note input (speech-to-text)
+- Evaluate math expressions written in notes (e.g., `sqrt(16) + 3^2`)
+- Works offline with no login or cloud required
 
----
+## How to Run the App (GUI)
+
+```bash
+python3 gui.py
+
 
 ## 💻 Run the GUI
 
