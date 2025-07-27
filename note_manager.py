@@ -54,8 +54,8 @@ class NoteManager:
     def list_notes(self):
         cursor = self.conn.execute("SELECT title, body, created_at FROM notes ORDER BY created_at DESC")
         rows = cursor.fetchall()
-        for title, body, created_at in rows:
-            print(f"- {title}\n  {body}\n  [{created_at}]\n")
+        return rows
+
 
     def search_notes(self, keyword: str):
         cursor = self.conn.execute(
@@ -87,6 +87,14 @@ class NoteManager:
     def delete_note_by_title(self, title: str):
         cur = self.conn.cursor()
         cur.execute("DELETE FROM notes WHERE title = ?", (title,))
+        self.conn.commit()
+
+    def update_note_by_title(self, original_title: str, new_title: str, new_body: str):
+        cur = self.conn.cursor()
+        cur.execute(
+            "UPDATE notes SET title = ?, body = ? WHERE title = ?",
+            (new_title, new_body, original_title),
+        )
         self.conn.commit()
 
 def main():
