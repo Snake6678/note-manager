@@ -24,3 +24,8 @@ cd note-manager
 python3 -m venv venv
 source venv/bin/activate
 
+# Screenshots
+
+###Listing Notes
+![List Notes](assets/Screenshot%202025-07-27%20at%204.03.19%20PM.png)
+
